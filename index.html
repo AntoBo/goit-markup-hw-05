@@ -59,7 +59,7 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button class="button" type="button">Заказать услугу</button>
+          <button data-modal-open class="button" type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -126,13 +126,16 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list">
             <li class="item occupation-item">
-              <img src="./images/coding.jpg" alt="Пишем код сайта" width="370" /><p class="occupation-title">Десктопные приложения</p>
-            </li>
-            <li class="item occupation-item" >
-              <img src="./images/marking.jpg" alt="Делаем разметку" width="370" /><p class="occupation-title">Мобильные приложения</p>
+              <img src="./images/coding.jpg" alt="Пишем код сайта" width="370" />
+              <p class="occupation-title">Десктопные приложения</p>
             </li>
             <li class="item occupation-item">
-              <img src="./images/designing.jpg" alt="Создаем дизайны" width="370" /><p class="occupation-title">Дизайнерские решения</p>
+              <img src="./images/marking.jpg" alt="Делаем разметку" width="370" />
+              <p class="occupation-title">Мобильные приложения</p>
+            </li>
+            <li class="item occupation-item">
+              <img src="./images/designing.jpg" alt="Создаем дизайны" width="370" />
+              <p class="occupation-title">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -364,14 +367,19 @@
           <address>
             <ul class="list">
               <li class="item">
-                <a class="link map animated" href="https://goo.gl/maps/ijGrAgnLtxh1ivYe7" target="_blank"
+                <a
+                  class="link map animated"
+                  href="https://goo.gl/maps/ijGrAgnLtxh1ivYe7"
+                  target="_blank"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
               <li class="item">
                 <a class="link animated" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="item"><a class="link animated" href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="item">
+                <a class="link animated" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
@@ -410,5 +418,16 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+
+    <!-- Modal -->
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="close button" type="button"><img src="./images/close-btn.svg" alt="Close button" width="30" height="30"></button>
+        <!-- <svg class="close-btn" width="30" height="30">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg> -->
+      </div>
+    </div>
   </body>
 </html>
