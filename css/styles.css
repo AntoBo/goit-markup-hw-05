@@ -139,6 +139,7 @@ body {
 }
 
 .nav .link {
+  position: relative;
   display: block;
   padding: 32px 0;
 
@@ -147,6 +148,20 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.nav.pages .link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--color-accent);
+  border-radius: 4px;
+}
+
 .nav.contacts .link {
   color: var(--text-color-main);
 }
