@@ -70,7 +70,7 @@ body {
 }
 
 .animated {
-  transition-property: box-shadow, color, fill, background-color, border-color;
+  transition-property: opacity, box-shadow, color, fill, background-color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -557,13 +557,14 @@ body {
   left: 0;
 
   background-color: var(--backdrop-color);
+
+  opacity: 1;
 }
 
-.is-hidden{
+.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
-
 
 .modal {
   position: absolute;
@@ -580,8 +581,10 @@ body {
   border-radius: 4px;
 }
 
-.close.button {
+.close-button {
   position: absolute;
   top: 8px;
   right: 8px;
+
+  /* background-color: red; */
 }
