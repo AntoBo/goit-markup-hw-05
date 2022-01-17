@@ -640,6 +640,7 @@ body {
   top: 8px;
   right: 8px;
 
+  border: none;
   border-radius: 50%;
   width: 30px;
   height: 30px;
