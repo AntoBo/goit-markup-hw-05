@@ -636,13 +636,20 @@ body {
 }
 
 .close-button {
+  border-radius: 50%;
+  cursor: pointer;
+
   position: absolute;
   top: 8px;
   right: 8px;
 
   width: 30px;
   height: 30px;
-
-  border-radius: 50%;
-  cursor: pointer;
+}
+.close-button-svg {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 30px;
+  height: 30px;
 }
