@@ -422,7 +422,10 @@
     <!-- Modal -->
     <div class="backdrop animated is-hidden" data-modal>
       <div class="modal animated">
-        <div class="close-button" data-modal-close></div>
+        <!-- <div class="close-button" data-modal-close></div> -->
+        <svg class="close-button">
+          <use href="./images/icons.svg#icon-close-btn" data-modal-close></use>
+        </svg>
         <!-- Собирался сделать кнопку закрытия через псевдоэлемент, но как дать ему тогда атрибут data-modal-close ? -->
       </div>
     </div>
